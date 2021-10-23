@@ -20,6 +20,11 @@ typedef signed long int sint32_t;
 
 typedef float float32_t;
 
+typedef enum boolean{
+	LOW = 0,
+	HIGH = 1
+}boolean;
+
 
 
 #endif /* STDTYPES_H_ */

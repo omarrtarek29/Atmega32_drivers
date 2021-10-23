@@ -12,6 +12,7 @@
 
 #include "LED.h"
 #include "BUTTON.h"
+#include "SEVEN_SEG.h"
 #include "delay.h"
 
 void App_init();

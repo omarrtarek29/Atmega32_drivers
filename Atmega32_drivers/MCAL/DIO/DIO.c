@@ -169,3 +169,51 @@ uint8_t DIO_read(register_t port, uint8_t pinNum){
 	}
 	return 0;
 }
+
+void DIO_writePort(register_t port, uint8_t num)
+{
+	switch (port){
+		case PORTA:
+		PORTA_DATA |= num;
+		break;
+		
+		case PORTB:
+		PORTB_DATA |= num;
+		break;
+		
+		case PORTC:
+		PORTC_DATA |= num;
+		break;					
+		
+		case PORTD:
+		PORTD_DATA |= num;
+		break;
+		
+		default:
+		break;
+	}
+}
+
+void DIO_clearPort(register_t port)
+{
+	switch (port){
+		case PORTA:
+		PORTA_DATA = 0x00;
+		break;
+		
+		case PORTB:
+		PORTB_DATA = 0x00;
+		break;
+		
+		case PORTC:
+		PORTC_DATA = 0x00;
+		break;
+		
+		case PORTD:
+		PORTD_DATA = 0x00;
+		break;
+		
+		default:
+		break;
+	}
+}

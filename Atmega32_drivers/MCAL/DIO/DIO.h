@@ -33,8 +33,8 @@ void DIO_setPinDir(register_t port, uint8_t pinNum, direction_t dir);
 void setPortDir(register_t port, direction_t dir);
 void DIO_write(register_t port, uint8_t pinNum, status_t stat);
 uint8_t DIO_read(register_t port, uint8_t pinNum);
-
-
+void DIO_writePort(register_t port, uint8_t num);
+void DIO_clearPort(register_t port);
 
 
 
